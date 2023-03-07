@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 #write a program that allows you to mark a square on the map using a two-digit system. 
 row1 = ["⬜️","️⬜️","️⬜️"]
 row2 = ["⬜️","⬜️","️⬜️"]
@@ -19,22 +13,3 @@ selected_row = map[vertical - 1]
 map[horizontal - 1][vertical -1] = "X"
 
 print(f"{row1}\n{row2}\n{row3}")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
