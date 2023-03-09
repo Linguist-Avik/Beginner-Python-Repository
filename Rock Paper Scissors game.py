@@ -1,4 +1,3 @@
-#rock paper scissors game
 import random
 select = int(input('Enter numbers 1 for rock or 2 for paper or 3 for scissors: '))
 rock = '''
@@ -29,38 +28,35 @@ scissors = '''
 '''
 #logic for user input
 if select == 1:
-  print(rock)
+  print(f'\nYou have selected Rock {rock}')
 elif select == 2:
-  print(paper)
+  print(f'\nYou have selected Paper {paper}')
 elif select == 3:
-  print(scissors)
+  print(f'\nYou have selected Scissors {scissors}')
 else:
   print("Enter numbers 1, 2 or 3")
-
+  
 #logic for computer input
 random_selection = random.randint(1,3)
-print(f'Computer selects {random_selection}')
 if random_selection == 1:
-  print(rock)
+  print(f'Computer selects Rock {rock}')
 elif random_selection == 2:
-  print(paper)
+  print(f'Computer selects Paper {paper}')
 else:
-  print(scissors)
+  print(f'Computer selects Scissors {scissors}')
   
-#logic for winner selection
+#check the logic
 if select == random_selection:
-  print("It is a tie")
+  print("\n~ It is a tie ~")
 elif select == 1 and random_selection == 2:
-  print("Computer wins")
+  print("\n~ Computer wins ~")
 elif select == 1 and random_selection == 3:
-  print("You win")
+  print("\n~ You win ~")
 elif select == 2 and random_selection == 1:
-  print("You win")
+  print("\n~You win~")
 elif select == 2 and random_selection == 3:
-  print("Computer wins")
+  print("\n~ Computer wins ~")
 elif select == 3 and random_selection == 1:
-  print("Computer wins")
+  print("\n~ Computer wins ~")
 elif select == 3 and random_selection == 2:
-  print("You win")
-else:
-  print('wrong input')
+  print("\n~ You win ~")
