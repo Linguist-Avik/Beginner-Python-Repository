@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 #rock paper scissors game
 import random
 select = int(input('Enter numbers 1 for rock or 2 for paper or 3 for scissors: '))
@@ -68,22 +62,3 @@ elif select == 3 and random_selection == 2:
   print("You win")
 else:
   print('wrong input')
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
