@@ -1,9 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
+#Rock, Paper and Scissors game
 import random
 rock = '''  ROCK
     _______
@@ -31,18 +26,20 @@ scissors = '''  SCISSORS
       (____)
 ---.__(___)
 '''
+#game graphic as list
 game_images = [rock, paper, scissors]
 
+#user input selection
 select = int(input('Enter numbers 0 for rock or 1 for paper or 2 for scissors: '))
 print('\nYou have selected:\n')
 print(game_images[select])
 
-
+#computer input selection
 random_selection = random.randint(0,2)
 print("\nComputer selects: \n")
 print(game_images[random_selection])
 
-
+#game logic
 if select > 2 and select < 0:
   print("Enter valid input")
 elif select == random_selection:
@@ -59,22 +56,3 @@ elif select == 2 and random_selection == 0:
   print("\n~ Computer wins ~")
 elif select == 2 and random_selection == 1:
   print("\n~ You win ~")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
