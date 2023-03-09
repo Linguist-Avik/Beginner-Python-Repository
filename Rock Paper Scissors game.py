@@ -32,8 +32,10 @@ if select == 1:
   print(rock)
 elif select == 2:
   print(paper)
-else:
+elif select == 3:
   print(scissors)
+else:
+  print("Enter numbers 1, 2 or 3")
 
 #logic for computer input
 random_selection = random.randint(1,3)
